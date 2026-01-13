@@ -3,8 +3,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./ErrorBoundary";
-import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import Home from "@/components/Home";
 
 function Router() {
   return (
@@ -16,11 +16,6 @@ function Router() {
     </Switch>
   );
 }
-
-// NOTE: About Theme
-// - Light theme selected for Scientific Minimalism design
-// - Color palette defined in index.css with teal accents and charcoal text
-// - Off-white background (#f9f9f9) with professional typography
 
 function App() {
   return (
